@@ -3,58 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>HUUN MOBILE 2</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    padding:0;
-    background:#000;
-    color:#fff;
-    font-family:Georgia, serif;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+height:100vh;
+background:url('ChatGPT Image 21 Haz 2026 01_49_14.png');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+font-family:Georgia, serif;
 }
 
-.container{
-    max-width:800px;
+.overlay{
+width:100%;
+height:100%;
+background:rgba(0,0,0,.45);
+
+display:flex;
+flex-direction:column;
+
+justify-content:flex-end;
+align-items:center;
+
+padding-bottom:120px;
+
+text-align:center;
 }
 
-h1{
-    font-size:70px;
-    color:#d4af37;
-    margin-bottom:10px;
+.title{
+font-size:72px;
+font-weight:bold;
+color:#d4af37;
+
+text-shadow:
+0 0 10px #000,
+0 0 20px #000,
+0 0 40px #000;
 }
 
-p{
-    font-size:24px;
-    color:#ddd;
+.subtitle{
+margin-top:20px;
+
+font-size:34px;
+color:white;
+
+text-shadow:
+0 0 10px #000,
+0 0 20px #000;
 }
 
-.small{
-    margin-top:30px;
-    font-size:18px;
-    color:#999;
+.loading{
+margin-top:15px;
+
+font-size:28px;
+color:#f0f0f0;
 }
+
+.footer{
+margin-top:35px;
+
+font-size:18px;
+color:#d0d0d0;
+line-height:30px;
+}
+
+@media(max-width:768px){
+
+.title{
+font-size:42px;
+}
+
+.subtitle{
+font-size:24px;
+}
+
+.loading{
+font-size:20px;
+}
+
+.footer{
+font-size:15px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="container">
-    <h1>HUUN MOBILE 2</h1>
+<div class="overlay">
 
-    <p>Geliştirme Sürecinde...</p>
+<div class="title">
+HUUN MOBILE 2
+</div>
 
-    <p>Lütfen Bekleyin.</p>
+<div class="subtitle">
+⚔️ Geliştirme Sürecinde ⚔️
+</div>
 
-    <div class="small">
-        info@huunmobile2.com<br>
-        @huunmobile2
-    </div>
+<div class="loading">
+Lütfen Bekleyin...
+</div>
+
+<div class="footer">
+info@huunmobile2.com<br>
+@huunmobile2
+</div>
+
 </div>
 
 </body>
